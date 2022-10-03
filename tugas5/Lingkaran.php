@@ -2,24 +2,23 @@
 require_once 'Bidang.php';
 class Lingkaran extends Bidang
 {
-    public $jari2;
+    protected $jari2;
+    const NAMA = 'Lingkaran';
 
-    public function __construct($nama, $jari2)
+    public function __construct($jari2)
     {
-        parent::__construct($nama);
         $this->jari2 = $jari2;
     }
     public function namaBidang()
     {
+        return (self::NAMA);
     }
     public function luasBidang()
     {
-        $this->jari2 = $jari2;
-        $luas = 3.14 * $jari2 * $jari2;
-        return $luas;
+        return (3.14 * $this->jari2 * $this->jari2);
     }
     public function kelilingBidang()
     {
-        echo '<br/>Suara Anjing Guk...Guk...Guk';
+        return (2 * (3.14 * $this->jari2));
     }
 }

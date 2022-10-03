@@ -4,12 +4,23 @@ class PersegiPanjang extends Bidang
 {
     public $panjang;
     public $lebar;
+    const NAMA = 'Persegi Panjang';
+
+    public function __construct($panjang, $lebar)
+    {
+        $this->panjang = $panjang;
+        $this->lebar = $lebar;
+    }
+    public function namaBidang()
+    {
+        return (self::NAMA);
+    }
     public function luasBidang()
     {
-        echo '<br/>Suara Anjing Guk...Guk...Guk';
+        return ($this->panjang * $this->lebar);
     }
     public function kelilingBidang()
     {
-        echo '<br/>Suara Anjing Guk...Guk...Guk';
+        return (2 * ($this->panjang + $this->lebar));
     }
 }
