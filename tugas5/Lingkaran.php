@@ -9,14 +9,17 @@ class Lingkaran extends Bidang
     {
         $this->jari2 = $jari2;
     }
+
     public function namaBidang()
     {
         return (self::NAMA);
     }
+
     public function luasBidang()
     {
         return (3.14 * $this->jari2 * $this->jari2);
     }
+
     public function kelilingBidang()
     {
         return (2 * (3.14 * $this->jari2));

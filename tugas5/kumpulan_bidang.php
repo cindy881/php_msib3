@@ -3,6 +3,7 @@ require_once 'Lingkaran.php';
 require_once 'PersegiPanjang.php';
 require_once 'Segitiga.php';
 
+// OBJECT
 $l1 = new Lingkaran(10);
 $p1 = new PersegiPanjang(2, 4);
 $s1 = new Segitiga(9, 12);
@@ -13,6 +14,7 @@ $bidang = [
     $s1
 ];
 
+// ARRAY JUDUL
 $arrJudul = ['No', 'Nama Bidang', 'Luas Bidang', 'Keliling Bidang', 'Keterangan'];
 ?>
 

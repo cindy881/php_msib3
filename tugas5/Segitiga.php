@@ -11,18 +11,22 @@ class Segitiga extends Bidang
         $this->alas = $alas;
         $this->tinggi = $tinggi;
     }
+
     public function namaBidang()
     {
         return (self::NAMA);
     }
+
     public function luasBidang()
     {
         return (0.5 * $this->alas * $this->tinggi);
     }
+
     public function setSisi()
     {
         return (sqrt(($this->alas * $this->alas) + ($this->tinggi * $this->tinggi)));
     }
+
     public function kelilingBidang()
     {
         return ($this->setSisi() * 3);

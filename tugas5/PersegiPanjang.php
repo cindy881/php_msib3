@@ -11,14 +11,17 @@ class PersegiPanjang extends Bidang
         $this->panjang = $panjang;
         $this->lebar = $lebar;
     }
+
     public function namaBidang()
     {
         return (self::NAMA);
     }
+
     public function luasBidang()
     {
         return ($this->panjang * $this->lebar);
     }
+
     public function kelilingBidang()
     {
         return (2 * ($this->panjang + $this->lebar));
